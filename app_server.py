@@ -37,7 +37,7 @@ class AppServer(object):
 	
 		if self.crypto:
 			self.keymonkey = KeyMonkey("server")
-			self.publisher = self.keymonkey.setupServer(self.server, self.bind_addr)
+			self.server = self.keymonkey.setupServer(self.server, self.bind_addr)
 
 		self.server.bind(self.bind_addr)
 		print("Server listening for new client connections at", self.bind_addr)
