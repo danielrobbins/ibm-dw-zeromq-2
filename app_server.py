@@ -76,7 +76,7 @@ class AppServer(object):
 				msg.send(self.server, client_id)
 
 		for client_id in stale_clients:
-			print("Haven't received a HELO from cliient %s recently. Dropping from list of connected clients." % client_id)
+			print("Haven't received a HELO from client %s recently. Dropping from list of connected clients." % client_id)
 			del self.client_identities[client_id]
 
 		sys.stdout.write(".")

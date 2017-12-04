@@ -13,7 +13,7 @@ from key_monkey import *
 
 class AppClient(object):
 
-	# where to connect to - point to another IP or host:5556 if running server on another machine
+	# where to connect to - point to another IP or hostname:5556 if running server on another machine
 	endpoint = "tcp://127.0.0.1:5556"
 
 	# crypto = True means 'use CurveZMQ'. False means don't. Must match server.
